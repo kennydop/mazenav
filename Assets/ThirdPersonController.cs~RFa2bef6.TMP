@@ -1,0 +1,27 @@
+﻿using UnityEngine;
+using UnityStandardAssets.Characters.ThirdPerson;
+public class ThirdPersonController : MonoBehaviour
+{
+    public FixedJoystick LeftJoystick;
+    public FixedButton Button;
+    public ThirdPersonUserControl Control;
+
+
+    protected PlayerController PlayerController;
+    protected Rigidbody Rigidbody;
+   
+
+    void Start()
+    {
+        PlayerController = GetComponent<PlayerController>();
+        Rigidbody = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        Control.m_Jump = Button.Pressed;
+        Control.Hinput = LeftJoystick.inputVector.x;
+        Control.Vinput = LeftJoystick.inputVector.y;
+
+    }
+}

@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6396400141222883148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6396400141222883146}
+  - component: {fileID: 6396400139500341260}
+  - component: {fileID: 6396400139500341263}
+  - component: {fileID: 6396400141222883149}
+  - component: {fileID: 6396400139838178024}
+  - component: {fileID: 6396400139838178027}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6396400141222883146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396400141222883148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6396400139500341260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396400141222883148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec673eaad0c8b9a4781c36307bc5bf96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreScript: {fileID: 6396400139500341263}
+  star_anim: {fileID: 6396400141222883149}
+  GameOverMenu: {fileID: 0}
+  Tyme: {fileID: 0}
+  Star1: {fileID: 0}
+  Star2: {fileID: 0}
+  Star3: {fileID: 0}
+  iGFixedJoyStick: {fileID: 0}
+  Run: {fileID: 0}
+  Blur: {fileID: 0}
+  TimerBar: {fileID: 0}
+  PauseWindow: {fileID: 0}
+  PauseBtn: {fileID: 0}
+  iGCanvas: {fileID: 0}
+  OuttaEnergy: {fileID: 0}
+  EnergyGained: {fileID: 0}
+  iGWatchAd: {fileID: 0}
+  Energy: {fileID: 0}
+  PointsForOneStar: 100
+  PointsForTwoStar: 250
+  PointsForThreeStar: 900
+--- !u!114 &6396400139500341263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396400141222883148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c19b3618118fe41bb36dfcdc9e0f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gM: {fileID: 6396400139500341260}
+  TimeBar: {fileID: 0}
+  TimerText: {fileID: 0}
+  countdownTime: 180
+  OnPauseTimeLeft: {fileID: 0}
+  Points: 0
+  MaxPoints: 180
+  LostPoints: 0
+  PointsText: {fileID: 0}
+  pointsToMultiplyBy: 5
+--- !u!114 &6396400141222883149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396400141222883148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4612df812a766447b822b04e03b9432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Star1: {fileID: 0}
+  Star2: {fileID: 0}
+  Star3: {fileID: 0}
+--- !u!114 &6396400139838178024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396400141222883148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c810ed5e9b711164db8a4dd81df8332e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textEnergy: {fileID: 0}
+  textTimer: {fileID: 0}
+  maxEnergy: 10
+  totalEnergy: 10
+  restoreDuration: 15
+  OutOfLives: {fileID: 0}
+--- !u!114 &6396400139838178027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396400141222883148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830c4a04a3a02bb41a1752df80355ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 0
+  GameComplete: {fileID: 0}
